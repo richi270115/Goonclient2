@@ -1,0 +1,38 @@
+
+name: Build GoonClient
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository herunterladen
+        uses: actions/checkout@v4
+
+      - name: Java 21 einrichten
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Gradle einrichten
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: GoonClient bauen
+        run: gradle build
+
+      - name: JAR-Datei bereitstellen
+        uses: actions/upload-artifact@v4
+        with:
+          name: GoonClient-JAR
+          path: build/libs/*.jar
+          if-no-files-found: error
