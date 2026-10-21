@@ -1,0 +1,6 @@
+{
+  "key.goonclient.block_esp": "Block ESP umschalten",
+  "key.goonclient.player_esp": "Player ESP umschalten",
+  "key.goonclient.vanish_diagnostics": "Vanish-Diagnose umschalten",
+  "key.goonclient.open_gui": "GoonClient-Menü öffnen"
+}

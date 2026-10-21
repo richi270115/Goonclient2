@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "goonclient",
+  "version": "${version}",
+  "name": "GoonClient",
+  "description": "GoonClient: ESP modules and limited vanish diagnostics for worlds/servers where permitted.",
+  "authors": ["GoonClient"],
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.shadowclient.ShadowEspClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.5",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "key.goonclient.block_esp": "Toggle Block ESP",
+  "key.goonclient.player_esp": "Toggle Player ESP",
+  "key.goonclient.vanish_diagnostics": "Toggle Vanish Diagnostics",
+  "key.goonclient.open_gui": "Open GoonClient GUI"
+}
